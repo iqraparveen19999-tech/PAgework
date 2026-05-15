@@ -1,0 +1,218 @@
+# Playboy Style Fullscreen Landing Page (Mobile Friendly)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Exclusive premium community landing page" />
+  <meta name="theme-color" content="#ff0080" />
+  <title>VIP Access</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      overflow:hidden;
+      background:#000;
+      color:#fff;
+      height:100vh;
+      width:100%;
+    }
+
+    .video-bg{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-2;
+    }
+
+    .overlay{
+      position:fixed;
+      inset:0;
+      background:linear-gradient(
+        135deg,
+        rgba(0,0,0,0.75),
+        rgba(255,0,128,0.45),
+        rgba(0,140,255,0.35)
+      );
+      z-index:-1;
+    }
+
+    .container{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      text-align:center;
+    }
+
+    .card{
+      width:100%;
+      max-width:420px;
+      padding:32px 24px;
+      border-radius:28px;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.15);
+      box-shadow:0 0 40px rgba(255,0,128,0.3);
+      animation:float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0px);}
+      50%{transform:translateY(-10px);}
+      100%{transform:translateY(0px);}
+    }
+
+    .badge{
+      display:inline-block;
+      padding:8px 18px;
+      border-radius:50px;
+      background:linear-gradient(90deg,#ff0080,#7a00ff);
+      font-size:13px;
+      font-weight:600;
+      margin-bottom:18px;
+      letter-spacing:1px;
+    }
+
+    h1{
+      font-size:38px;
+      font-weight:700;
+      line-height:1.15;
+      margin-bottom:14px;
+    }
+
+    h1 span{
+      color:#ff4da6;
+    }
+
+    p{
+      font-size:15px;
+      color:#e6e6e6;
+      line-height:1.7;
+      margin-bottom:28px;
+    }
+
+    .telegram-btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      text-decoration:none;
+      padding:16px;
+      border-radius:18px;
+      background:linear-gradient(90deg,#00bfff,#0088cc);
+      color:#fff;
+      font-size:17px;
+      font-weight:600;
+      transition:0.3s ease;
+      box-shadow:0 10px 25px rgba(0,136,204,0.45);
+    }
+
+    .telegram-btn:hover{
+      transform:scale(1.03);
+      box-shadow:0 12px 30px rgba(0,136,204,0.65);
+    }
+
+    .telegram-btn img{
+      width:24px;
+      height:24px;
+    }
+
+    .footer{
+      margin-top:20px;
+      font-size:12px;
+      opacity:0.8;
+    }
+
+    @media(max-width:480px){
+      h1{
+        font-size:30px;
+      }
+
+      p{
+        font-size:14px;
+      }
+
+      .card{
+        padding:28px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="https://cdn.coverr.co/videos/coverr-night-club-lights-1561931433072?download=1080p" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="card">
+      <div class="badge">PLAYBOY • ZOGOLO VIP</div>
+
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop" alt="Luxury Model" style="width:100%; height:240px; object-fit:cover; border-radius:22px; margin-bottom:22px; box-shadow:0 10px 30px rgba(255,0,128,0.35);">
+
+      <h1>Unlock Your <span>Playboy</span> Access</h1>
+
+      <p>
+        Join the stylish Zogolo Playboy VIP experience with premium lifestyle content, exclusive updates, luxury vibes, and private community access directly on Telegram.
+      </p>
+
+      <a class="telegram-btn" href="https://t.me/+fWaJ6jQJ2Lk3ODll" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+        Join Telegram Now
+      </a>
+
+      <div class="footer">
+        Playboy • Zogolo • Mobile Friendly • Full Screen
+        
+        * Advertised by : SRS Marketing Agency * 
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+```
+
+## Features
+
+* Fully responsive mobile-first design
+* Full-screen landing page
+* Video background effect
+* Colorful neon UI
+* Telegram integration included
+* Glassmorphism card design
+* Meta-friendly safe layout
+* No scrolling required
+
+## How to Use
+
+1. Copy the full HTML code
+2. Save as `index.html`
+3. Open in browser or upload to hosting
+4. You can host it free on:
+
+   * Cloudflare Pages
+   * GitHub Pages
+   * Netlify
+   * Vercel
